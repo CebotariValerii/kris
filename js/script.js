@@ -3,11 +3,15 @@ function task1 (){
     let age;
     do{
          age = prompt('Назовите ваш возраст', '')
-
-         if(isNaN(age) || age < 0){
+        console.log(age)
+        if (age === null) {
+            alert('Вы отменили ввод. Введите значение для возраста!');
+        }else if(isNaN(age) || age < 0 || age.trim() === ''){
             alert('Введите положительное число для возраста')
          }
-    }while(isNaN(age) || age < 0)
+
+    }while(age === null || isNaN(age) || age < 0 || age.trim() === '')
+
     if(age <= 11){
         alert('вы являетесь ребенком')
     }
@@ -23,6 +27,13 @@ function task1 (){
     if(age > 120){
         alert('вы нашли элексир бессмертия ?')
     }
-    
+
+
 }
-task1()
+task1();
+
+//task 2
+
+// function task 2(){
+//     const num = prompt('')
+// }
