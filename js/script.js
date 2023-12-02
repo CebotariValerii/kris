@@ -81,4 +81,17 @@ function task2(){
     }
 }
 
-task2()
+// task2()
+
+//task 3
+
+let bigNum;
+do{
+    bigNum = prompt('Напишите трехзначное число','')
+    if (bigNum === null) {
+        alert('Вы отменили ввод. Напишите трехзначное число!');
+    }else if(isNaN(bigNum) || bigNum < 0 || bigNum.trim() === ''){
+        alert('Напишите трехзначное число!')
+     }
+}while(bigNum > 999 || bigNum < 100 || bigNum < 0 || bigNum === null || isNaN(bigNum) || bigNum.trim() === '')
+
