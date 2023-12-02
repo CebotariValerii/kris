@@ -3,7 +3,7 @@ function task1 (){
     let age;
     do{
          age = prompt('Назовите ваш возраст', '')
-        console.log(age)
+
         if (age === null) {
             alert('Вы отменили ввод. Введите значение для возраста!');
         }else if(isNaN(age) || age < 0 || age.trim() === ''){
@@ -30,10 +30,22 @@ function task1 (){
 
 
 }
-task1();
+// task1();
 
-//task 2
+// task 2
 
-// function task 2(){
-//     const num = prompt('')
-// }
+function task2(){
+    let num;
+    do{
+        num = prompt('Напишите цифру от 0 до 9','')
+        if (num === null) {
+            alert('Вы отменили ввод. Введите значение от 0 до 9!');
+        }else if(isNaN(num) || num < 0 || num.trim() === ''){
+            alert('Введите значение от 0 до 9!')
+         }
+    }while(num > 9 || num < 0 || num === null || isNaN(num) || num.trim() === '')
+
+
+}
+
+task2()
