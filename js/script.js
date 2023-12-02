@@ -95,3 +95,12 @@ do{
      }
 }while(bigNum > 999 || bigNum < 100 || bigNum < 0 || bigNum === null || isNaN(bigNum) || bigNum.trim() === '')
 
+function task3(){
+    if(bigNum[0] == bigNum[1] || bigNum[1] == bigNum[2] || bigNum[0] == bigNum[2]){
+        alert('есть повторения')
+    }else{
+        alert('нет повторений')
+    }
+}
+
+task3()
