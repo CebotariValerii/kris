@@ -85,7 +85,9 @@ function task2(){
 
 //task 3
 
-let bigNum;
+
+function task3(){
+    let bigNum;
 do{
     bigNum = prompt('Напишите трехзначное число','')
     if (bigNum === null) {
@@ -95,7 +97,6 @@ do{
      }
 }while(bigNum > 999 || bigNum < 100 || bigNum < 0 || bigNum === null || isNaN(bigNum) || bigNum.trim() === '')
 
-function task3(){
     if(bigNum[0] == bigNum[1] || bigNum[1] == bigNum[2] || bigNum[0] == bigNum[2]){
         alert('есть повторения')
     }else{
@@ -103,4 +104,12 @@ function task3(){
     }
 }
 
-task3()
+// task3()
+
+
+function task5(num) {
+    let arr = num.split().reverse().join()
+    num == arr ? Alert("это число палиндромное") : Alert("это число не палиндромное")
+  
+}
+   Task5("12321")
