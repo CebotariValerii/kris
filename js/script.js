@@ -109,7 +109,7 @@ do{
 
 function task5(num) {
     let arr = num.split().reverse().join()
-    num == arr ? Alert("это число палиндромное") : Alert("это число не палиндромное")
+    num == arr ? alert("это число палиндромное") : alert("это число не палиндромное")
   
 }
-   Task5("12321")
+   task5("12321")
