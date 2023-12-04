@@ -107,9 +107,33 @@ do{
 // task3()
 
 
-function task5(num) {
-    let arr = num.split().reverse().join()
+function task5() {
+    const num = prompt('Напишите цифру от 0 до 9','')
+    const arr = num.split().reverse().join()
     num == arr ? alert("это число палиндромное") : alert("это число не палиндромное")
   
 }
-   task5("12321")
+//    task5()
+
+//task 6
+
+function task6() {
+    const num = prompt('Напишите cколько долларов вы хотите поменять',"");
+    const val = prompt('Напишите в какую валюту EUR, UAH, AZN',"");
+    switch(val){
+        case 'EUR':
+            alert(num * 2);
+            break;
+        case 'UAH':
+            alert(num * 3);
+            break;
+        case 'AZN':
+            alert(num * 4);
+            break;
+        default:
+            alert('нет такой валюты');
+            break;
+    }
+}
+
+task6()
